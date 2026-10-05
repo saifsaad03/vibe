@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git Push Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <span class="badge">practice repo</span>
+      <h1>Git Push Practice</h1>
+      <p class="sub">A throwaway page built to give git something to commit.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Counter</h2>
+      <p class="row">
+        <output id="count" class="big">0</output>
+        <button id="dec" class="btn">-1</button>
+        <button id="inc" class="btn primary">+1</button>
+        <button id="reset" class="btn ghost">reset</button>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Todo list</h2>
+      <form id="todo-form" class="row">
+        <input id="todo-input" type="text" placeholder="add a task, then press enter" autocomplete="off" />
+        <button class="btn primary" type="submit">Add</button>
+      </form>
+      <ul id="todo-list" class="list"></ul>
+      <p class="muted"><span id="todo-count">0</span> left &middot; saved in localStorage</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Random colour</h2>
+      <p class="row">
+        <span id="swatch" class="swatch"></span>
+        <code id="hex">#000000</code>
+        <button id="roll" class="btn">Roll</button>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. Edit me, then commit</h2>
+      <p class="muted">
+        Change this text in <code>index.html</code>, run <code>git status</code> then
+        <code>git diff</code>, and watch the diff show exactly what you typed.
+      </p>
+    </section>
+
+    <footer class="foot muted">
+      Made for learning <code>git init</code> &rarr; <code>add</code> &rarr; <code>commit</code> &rarr; <code>push</code>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
